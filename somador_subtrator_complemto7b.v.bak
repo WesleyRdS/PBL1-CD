@@ -1,0 +1,23 @@
+module somador_subtrator_complemto7b(a, b  cin, s, cout);
+
+	input [0:7] a, b;
+	input cin;
+	output cout;
+	output [0:7] s; 
+	
+	wire [0:7] T;
+	
+   somador_subtrator_complemto1b(a[0], b[0], cin, s[0], T[0]);
+	somador_subtrator_complemto1b(a[1], b[1], t[0], s[1], T[1]);
+	somador_subtrator_complemto1b(a[2], b[2], t[1], s[2], T[2]);
+	somador_subtrator_complemto1b(a[3], b[3], t[2], s[3], T[3]);
+	somador_subtrator_complemto1b(a[4], b[4], t[3], s[4], T[4]);
+	somador_subtrator_complemto1b(a[5], b[5], t[4], s[5], T[5]);
+	somador_subtrator_complemto1b(a[6], b[6], t[5], s[6], T[6]);
+	somador_subtrator_complemto1b(a[7], b[7], t[6], s[7], cout);
+	
+endmodule
+
+
+
+

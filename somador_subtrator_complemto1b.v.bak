@@ -1,0 +1,18 @@
+module somador_subtrator_complemto1b(a, b, cin, s0, cout);
+	input a, b, cin;
+	output s0, cout;
+	
+	wire [0:2] F;
+	wire [0:1] inv;
+	
+	not notb(inv[0], b);
+	not notc(inv[1], cin);
+	
+	xor xor0(F[0], a, inv[0]);
+	xor xor1(s0, F[0], cin);
+	
+	and and0(F[1], a, inv[0]);
+	and and1(F[2], F[0], inv[1]);
+	or or0(cout, F[1], F[2]);
+	
+endmodule 

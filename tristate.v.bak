@@ -1,0 +1,15 @@
+module tristate(a, b, clk, s);
+	input a, b, clk;
+	output s;
+	
+	wire inv;	
+	
+	not not0(inv, clk);
+	
+	and and0(T[0], a, inv);
+	and and1(T[1], b, clk);
+	or or0(T[0], T[1]);
+	
+endmodule
+	
+	

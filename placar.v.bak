@@ -1,0 +1,8 @@
+module placar(btn, ch, soma, conversor, decodificador);
+	input [0:3 ]btn
+	
+	btn1 = 001;
+	btn2 = 010;
+	btn3 = 011;
+	
+endmodule 

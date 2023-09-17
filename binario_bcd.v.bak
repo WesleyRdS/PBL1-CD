@@ -1,0 +1,23 @@
+module binario_bcd(a, b, c, d, e, f, g, s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11);
+	input a, b, c, d, e, f;
+	output s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11;
+	
+	wire [0:20] T;
+	wire [0:7] inv;
+	
+	not not0(inv[0], a);
+	not not1(inv[1], b);
+	not not2(inv[2], c);
+	not not3(inv[3], d);
+	not not4(inv[4], e);
+	not not5(inv[5], f);
+	not not6(inv[6], g);
+	
+	and and1(s0, a, !inv[0]);
+	and and2(s1, b, !inv[1]);
+	and and1(s2, c, !inv[2]);
+	
+endmodule
+	
+	
+	

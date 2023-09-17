@@ -1,0 +1,88 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 08:59:18  April 09, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Problema1CD_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM240T100C5
+set_global_assignment -name TOP_LEVEL_ENTITY placar
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:59:17  APRIL 09, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name VERILOG_FILE bcd7segs.v
+set_global_assignment -name VERILOG_FILE binario_bcd.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VERILOG_FILE somador_subtrator_complemto1b.v
+set_global_assignment -name VERILOG_FILE somador_subtrator_complemto7b.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name VERILOG_FILE comparador_bcd_8_bits.v
+set_global_assignment -name VERILOG_FILE comparador_bcd_24_bits.v
+set_global_assignment -name VERILOG_FILE tristate.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name VERILOG_FILE placar.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_location_assignment PIN_42 -to chave[0]
+set_location_assignment PIN_40 -to chave[1]
+set_location_assignment PIN_38 -to chave[2]
+set_location_assignment PIN_36 -to chave[3]
+set_location_assignment PIN_34 -to chave[4]
+set_location_assignment PIN_30 -to chave[5]
+set_location_assignment PIN_33 -to chave[6]
+set_location_assignment PIN_52 -to sinal
+set_location_assignment PIN_48 -to btn[1]
+set_location_assignment PIN_44 -to btn[2]
+set_location_assignment PIN_90 -to saida[0]
+set_location_assignment PIN_70 -to saida[1]
+set_location_assignment PIN_41 -to saida[2]
+set_location_assignment PIN_98 -to saida[3]
+set_location_assignment PIN_100 -to saida[4]
+set_location_assignment PIN_92 -to saida[5]
+set_location_assignment PIN_39 -to saida[6]
+set_location_assignment PIN_12 -to clk
+set_location_assignment PIN_88 -to sclk[0]
+set_location_assignment PIN_66 -to sclk[1]
+set_global_assignment -name VERILOG_FILE pontuar.v
+set_location_assignment PIN_35 -to ch
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_location_assignment PIN_50 -to btn[0]
+set_location_assignment PIN_54 -to alerta
